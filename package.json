@@ -9,10 +9,14 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "classnames": "^2.3.2",
+    "date-fns": "^2.29.3",
+    "html-react-parser": "^3.0.12",
     "ky": "^0.33.2",
     "path": "^0.12.7",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-icons": "^4.8.0",
     "react-query": "^3.39.3",
     "react-router-dom": "^6.8.2"
   },
@@ -20,11 +24,17 @@
     "@types/node": "^18.14.6",
     "@types/react": "^18.0.27",
     "@types/react-dom": "^18.0.10",
+    "@typescript-eslint/eslint-plugin": "^5.54.1",
+    "@typescript-eslint/parser": "^5.54.1",
     "@vitejs/plugin-react": "^3.1.0",
     "autoprefixer": "^10.4.13",
+    "eslint": "^8.35.0",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
     "postcss": "^8.4.21",
     "tailwindcss": "^3.2.7",
     "typescript": "^4.9.3",
-    "vite": "^4.1.0"
+    "vite": "^4.1.0",
+    "vite-plugin-eslint": "^1.8.1"
   }
 }

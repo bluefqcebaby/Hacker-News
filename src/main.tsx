@@ -1,14 +1,19 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import App from "./App";
+import News from "@/pages/News";
 import "./index.css";
 import { QueryClient, QueryClientProvider } from "react-query";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import SingleNews from "./pages/SingleNews";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />,
+    element: <News />,
+  },
+  {
+    path: "news/:newsId",
+    element: <SingleNews />,
   },
 ]);
 
