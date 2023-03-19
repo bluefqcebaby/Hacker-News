@@ -3,7 +3,7 @@ import { format } from "date-fns";
 import { ApiItem, Item } from "./types";
 
 const getLatestStories = async () => {
-  const resp = await api("newstories.json");
+  const resp = await api("topstories.json");
   const storiesIds = ((await resp.json()) as number[]).slice(0, 100);
   const stories = await Promise.all(storiesIds.map(getSingleStory));
   return stories;

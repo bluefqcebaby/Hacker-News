@@ -6,16 +6,21 @@ import { QueryClient, QueryClientProvider } from "react-query";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import SingleNews from "./pages/SingleNews";
 
-const router = createBrowserRouter([
+const router = createBrowserRouter(
+  [
+    {
+      path: "/",
+      element: <News />,
+    },
+    {
+      path: "news/:newsId",
+      element: <SingleNews />,
+    },
+  ],
   {
-    path: "/",
-    element: <News />,
-  },
-  {
-    path: "news/:newsId",
-    element: <SingleNews />,
-  },
-]);
+    basename: "/Hacker-News",
+  }
+);
 
 const queryClient = new QueryClient();
 

@@ -6,6 +6,7 @@ import eslint from "vite-plugin-eslint";
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react(), eslint()],
+  base: "/Hacker-News/",
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),

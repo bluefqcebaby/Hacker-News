@@ -35,17 +35,19 @@ const SingleNews = () => {
               Go back
             </Link>
           </div>
-          <div className="flex gap-2 items-center group cursor-pointer w-fit">
-            <a
-              href={story?.url}
-              className="text-blue-500 group-hover:underline"
-              target="_blank"
-              rel="noreferrer"
-            >
-              To story
-            </a>
-            <BsArrowRight className="text-blue-500 group-hover:translate-x-1 transition" />
-          </div>
+          {story?.url && (
+            <div className="flex gap-2 items-center group cursor-pointer w-fit">
+              <a
+                href={story?.url}
+                className="text-blue-500 group-hover:underline"
+                target="_blank"
+                rel="noreferrer"
+              >
+                To story
+              </a>
+              <BsArrowRight className="text-blue-500 group-hover:translate-x-1 transition" />
+            </div>
+          )}
         </div>
       </div>
       <div className="px-1 sm:px-5 mt-10 mb-10">

@@ -1,11 +1,9 @@
-import { useComment } from "@/hooks/useComment";
-import sx from "classnames";
-import { FC, memo, useMemo, useState } from "react";
-import parse from "html-react-parser";
-import { Item } from "@/api/stories/types";
-import { CommentLoad } from "./comment-load";
-import { BiDownArrow } from "react-icons/bi";
 import { getRelativeDate } from "@/lib/getRelativeDate";
+import sx from "classnames";
+import parse from "html-react-parser";
+import { FC, useState } from "react";
+import { BiDownArrow } from "react-icons/bi";
+import { CommentLoad } from "./comment-load";
 
 interface Props {
   by?: string;
